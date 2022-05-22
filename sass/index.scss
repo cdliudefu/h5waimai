@@ -1,0 +1,10 @@
+// 引入normalize
+@import './normalize.scss';
+// 引入swiper
+@import '../lib/swiper/swiper.min.scss';
+// 引入base
+@import './base.scss';
+// px to rem fn
+@function p2r($size) {
+    @return ($size/32)*1rem;
+}

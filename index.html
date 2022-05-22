@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scale=no,">
     <title>Document</title>
+    <script>
+        document.querySelector('html').style.fontSize = window.screen.availWidth / 20 + 'px';
+        window.onresize = function() {
+            document.querySelector('html').style.fontSize = window.screen.availWidth / 20 + 'px';
+        }
+    </script>
 </head>
 
 <body>
 
+    <script src="./lib/swiper/swiper.min.js"></script>
 </body>
 
 </html>
